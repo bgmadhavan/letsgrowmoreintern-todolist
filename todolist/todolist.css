@@ -1,0 +1,203 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111827;
+}
+
+.tdlist
+{
+    background-color: rgb(250, 249, 249);
+    max-width: 500px;
+    margin: 5% auto;
+    border: 1px solid black;
+    border-radius: 35px;
+    padding: 15px;
+    box-shadow:  0 0 8px black;
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
+}
+
+/*headings*/
+
+
+.tdlist header
+{
+    color: #8a97a8;
+    margin-left: 15px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+/*ENd of headings */
+
+.tdlist .taskinput
+{
+    display:flex;
+    flex: 1 1 0%;
+    justify-content: space-between;
+    border-radius: 10px;;
+}
+
+input, button
+{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.tdlist #taskinput
+{
+    width: 80%;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #374151;
+    color: #EEE;
+    border: none;
+}
+
+.tdlist .add
+{
+    width: 20%;
+    padding:  5px;
+    border-radius: 10px;
+    text-align: center;
+    color: #ec4899;
+    background-image: linear-gradient(to right,#ec4899,#8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 710;
+    border: none;
+
+}
+
+.tdlist .add:hover
+{
+    background-image: linear-gradient(to right,#ec4899,#8b5cf6);
+    color: #eee;
+    -webkit-background-clip:unset;
+    -webkit-text-fill-color: #EEE;
+}
+
+.tdlist #taskinput ::placeholder
+{
+    color: #687280;
+}
+
+main
+{
+    width: 100%;
+    flex: 1 1 0%;
+}
+
+h1{
+    color: #8a97a8;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+main,.tasksec,#tasks
+{
+    margin: none;
+    padding: none;
+}
+
+.task
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #111827;
+    color:#eee ;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+}
+
+
+
+.content .text
+{
+    color:#EEE;
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+.content .text:not(:read-only)
+{
+    color:#ec4899;
+}
+
+#tasks .task .actions
+{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+#tasks .task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+.task .actions .edit
+{
+    background-image: linear-gradient(to right ,#ec4899,#8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.task .actions .del
+{
+    color: crimson;
+}
+
+.task .actions .edit:hover
+{
+    background-image: linear-gradient(to right,#ec4899,#8b5cf6);
+    color: #eee;
+    -webkit-background-clip:unset;
+    -webkit-text-fill-color: #EEE;
+}
+
+.task .actions .del:hover
+{
+    background-color: crimson;
+    color: #eee;
+    -webkit-background-clip:unset;
+    -webkit-text-fill-color: #EEE;
+}
+
+#tasks .task .checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  #tasks .task .checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+
+
+
+
+
